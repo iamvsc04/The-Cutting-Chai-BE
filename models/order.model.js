@@ -4,7 +4,7 @@ const orderItemSchema = new mongoose.Schema({
   itemName: String,
   quantity: Number,
   price: Number,
-  addons: [String],
+  addons: [{ name: String, price: Number }],
 });
 
 const orderSchema = new mongoose.Schema(
